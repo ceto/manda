@@ -1,0 +1,67 @@
+.result {
+  padding:4rem 0 3rem;
+}
+.postsq {
+  @include clearfix();
+  background-color: $color-fa;
+  padding: rem-calc(20);
+  margin:0 auto 2rem;
+
+  @include breakpoint($break-large) {
+    max-width: 85%;
+  }
+
+}
+
+
+.postsq__fig {
+  margin:0 0 1rem 0;
+  padding:0;
+  @include breakpoint($break-small) {
+    margin-bottom: 0;
+    float:right;
+    width:30%;
+  }
+}
+.postsq__head {
+
+  @include breakpoint($break-small) {
+    float:left;
+    width:70%;
+    padding-right: 2rem;
+    //padding-left: 5%;
+  }
+  @include breakpoint($break-medium) {
+    padding-right: 13%;
+    padding-left: 3%;
+  }
+
+}
+
+.postsq__tags {
+  list-style-type: none;
+  margin:1rem 0;
+  padding: 0;
+  li {
+    display:inline;
+  }
+}
+
+.postsq__title {
+  margin-bottom: 0;
+  a {
+    color:inherit;
+    &:hover, &:active {
+      color: $color-primary;
+    }
+  }
+}
+
+.postsq__subtitle {
+  a {
+    color:inherit;
+    &:hover, &:active {
+      color: $color-primary;
+    }
+  }
+}

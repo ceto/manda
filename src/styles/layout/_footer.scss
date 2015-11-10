@@ -1,0 +1,73 @@
+/*doc
+---
+title: Footer
+name: header
+category: Layout
+---
+
+```
+*/
+
+.footer-container {
+  background-color: $color-f0;
+  padding-top:2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.footernav {
+  float:left;
+  margin:1rem 0 0;
+}
+
+.footerlogo {
+  text-align: center;
+  float:right;
+  margin:1rem 0;
+
+  @include breakpoint($break-medium) {
+    float:none;
+    position: absolute;
+    left:50%;
+    transform:translateX(-31px);
+  }
+
+}
+
+.footerdescr {
+  margin:1rem 0;
+  border-right:1px solid $color-primary;
+  padding-right: 1rem;
+  color:$gray;
+  max-width: 15rem;
+  font-size: rem-calc(16);
+  text-align: right;
+  float:right;
+  clear:right;
+}
+
+.footercopy {
+  clear:both;
+  text-align: right;
+}
+
+.tothetop {
+  position: absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-1.25em) translateY(-1.25em);
+  margin:0 auto;
+
+  display: block;
+  font-size: .875rem;
+  line-height: 2.5;
+  width:2.5em;
+  height:2.5em;
+  border-radius: 50%;
+  text-align: center;
+  color:$color-font;
+  border:1px solid lighten($gray,40);
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 lighten($gray,40);
+
+}

@@ -1,0 +1,263 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Manda - Keresés az archívumban</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Manda keresés">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#8BA124">
+    <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#8BA124">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link href="styles/main.min.css" rel="stylesheet">
+
+  </head>
+  <body class="home">
+
+    <!-- Icons SVG Sprite -->
+    <div class="is-hidden">
+      <!-- inject:svg --><!-- endinject -->
+    </div>
+
+    <header class="header-container" role="banner">
+      <div class="grid-container">
+        <div class="header-menu">
+          <a href="#"><i class="icon icon--hamburger"></i><span>Menu</span></a>
+        </div>
+        <div class="header-logo">
+          <!-- <a href="./"><img src="assets/images/logo_manda.png" alt="manda" width="104" height="43"></a> -->
+          <a href="#"><img src="assets/images/logo_full.png" alt="manda" width="400"></a>
+        </div>
+
+        <div class="header-search" id="header-search">
+          <form method="get" id="searchform" action="#">
+            <label for="s" class="header-search-label">Keresés</label>
+            <input class="header-search-input" placeholder="Keresés a MANDA-n" type="text" value="" name="s" id="s"/>
+
+            <button class="header-search-submit button" type="submit" name="go" id="go" value="a"><i class="icon icon--nagyito"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container" role="main">
+      <section class="searchblock">
+        <div class="grid-container">
+          <form action="post" class="thegreatsearchform form-container">
+            <div class="formrow">
+              <label for="what">Mit keres
+                <div id="the-basics">
+                  <input type="text" name="what" class="swhat typeahead" placeholder="Kezdjen el írni">
+                </div>
+              </label>
+            </div>
+            <div class="formrow formrow--2">
+                <div class="dates">
+                  <label for="startofdate">Mikortól
+                    <input type="text" placeholder="Mikortól?" name="startofdate" class="sdate datepicker">
+                  </label>
+                  <label for="endofdate">Meddig?
+                    <input type="text" placeholder="Meddig?" name="endofdate" class="sdate datepicker">
+                  </label>
+                </div>
+                <label for="type">Típus
+                <select name="type" id="type" class="stype">
+                  <option value="">Típus</option>
+                  <option value="1">Kép</option>
+                  <option value="2">Hanganyag</option>
+                  <option value="3">Szöveg</option>
+                  <option value="4">Audiovizuális anyag</option>
+                </select>
+                </label>
+              </div>
+              <div class="formrow formrow--actions">
+                <button class="ssubmit button is-primary">Keresés</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+      <section class="resultsummary">
+        <div class="grid-container">
+          <span class="nor">1 - 10 találat a 264416 közül</span>
+        </div>
+      </section>
+
+      <section class="result">
+        <div class="grid-container">
+          <article class="postsq">
+            <figure class="postsq__fig">
+              <a href="#"><img src="http://placehold.it/640x640" alt="Title lorem ipsum"></a>
+            </figure>
+            <header class="postsq__head">
+              <h2 class="postsq__title"><a href="#">Title lorem ipsum</a></h2>
+              <h3 class="postsq__subtitle">Title lorem ipsum</h3>
+              <ul class="postsq__tags">
+                <li><a href="#" class="tag">Audiovizuális anyag</a></li>
+              </ul>
+              <div class="postsq__excerpt">
+                <p>Kék háttér előtt baloldalt szembenéző, fehér bőringes, színes nyakláncos indiánfélalakja, hajában, hátul két sastoll.Mögötte, kissé takarva, jobbra néző, bal kezével a térdére támaszkodó, kalapos , barna, rojtos bőringes, kalapos, szemüveges, bajuszos, szakállas fehér férfi. Jelzés nélkül.</p>
+              </div>
+            </header>
+          </article>
+
+          <article class="postsq">
+            <figure class="postsq__fig">
+              <a href="#"><img src="http://placehold.it/640x640" alt="Title lorem ipsum"></a>
+            </figure>
+            <header class="postsq__head">
+              <h2 class="postsq__title"><a href="#">Cras mattis consectetur</a></h2>
+              <h3 class="postsq__subtitle">Subtitle lorem ipsum</h3>
+              <ul class="postsq__tags">
+                <li><a href="#" class="tag">Szöveg</a></li>
+              </ul>
+              <div class="postsq__excerpt">
+                <p>Előtérben Stetson kalapos, bajuszos, bőringes, szembenéző fehér férfi mellközépig ábrázolva.Mögötte jobbra két indián sátor.jelzés nélkül.</p>
+              </div>
+            </header>
+          </article>
+
+          <article class="postsq">
+            <figure class="postsq__fig">
+              <a href="#"><img src="http://placehold.it/640x640" alt="Title lorem ipsum"></a>
+            </figure>
+            <header class="postsq__head">
+              <h2 class="postsq__title"><a href="#">Dapibus ac facilisis in, egestas eget quam ipsum</a></h2>
+              <h3 class="postsq__subtitle">Sed posuere consectetur est at lobortis</h3>
+              <ul class="postsq__tags">
+                <li><a href="#" class="tag">Audiovizuális anyag</a></li>
+              </ul>
+              <div class="postsq__excerpt">
+                <p>Kék háttér előtt baloldalt szembenéző, fehér bőringes, színes nyakláncos indiánfélalakja, hajában, hátul két sastoll.Mögötte, kissé takarva, jobbra néző, bal kezével a térdére támaszkodó, kalapos, barna, rojtos bőringes, kalapos, szemüveges, bajuszos, szakállas fehér férfi. Jelzés nélkül.</p>
+              </div>
+            </header>
+          </article>
+
+
+          <nav class="searchnav">
+            <ul class="pagination">
+              <li><a href=""><i class="icon icon--double-left"></i></a></li>
+              <li><a href=""><i class="icon icon--left"></i></a></li>
+              <li class="current"><a href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li class="unavailable"><a href="">&hellip;</a></li>
+              <li><a href="">12</a></li>
+              <li><a href=""><i class="icon icon--right"></i></a></li>
+              <li><a href=""><i class="icon icon--double-right"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+
+      <section class="result result--singlepost">
+        <div class="grid-container">
+          <article class="singlepost">
+            <div class="singlepost__top">
+              <figure class="singlepost__fig">
+                <a href="#"><img src="http://placehold.it/640x480" alt="Title lorem ipsum"></a>
+              </figure>
+              <header class="singlepost__head">
+                <h2 class="singlepost__title"><a href="#">Dapibus ac facilisis in, egestas</a></h2>
+                <h3 class="singlepost__subtitle">Sed posuere consectetur</h3>
+                <ul class="singlepost__tags">
+                  <li><a href="#" class="tag">Audiovizuális anyag</a></li>
+                </ul>
+              </header>
+            </div>
+            <footer class="singlepost__footer">
+              <div class="singlepost__excerpt">
+                <p>Kék háttér előtt baloldalt szembenéző, fehér bőringes, színes nyakláncos indiánfélalakja, hajában, hátul két sastoll.Mögötte, kissé takarva, jobbra néző, bal kezével a térdére támaszkodó, kalapos, barna, rojtos bőringes, kalapos, szemüveges, bajuszos, szakállas fehér férfi. Jelzés nélkül.</p>
+                <p>Előtérben Stetson kalapos, bajuszos, bőringes, szembenéző fehér férfi mellközépig ábrázolva. Mögötte jobbra két indián sátor, jelzés nélkül.</p>
+              </div>
+              <div class="singlepost__list">
+                <dl>
+                  <dt>Létrehozó / szerző</dt>
+                  <dd>Cseh Tamás</dd>
+                  <dt>Tárgy</dt>
+                  <dd>Grafika</dd>
+                  <dt>Térbeli vonatkozás</dt>
+                  <dd>Magyarország</dd>
+                  <dt>Időbeli vonatkozás</dt>
+                  <dd>Évszám nélkül</dd>
+                  <dt>Formátum</dt>
+                  <dd>Vegyes technika</dd>
+                  <dt>Kép színe</dt>
+                  <dd>Szines</dd>
+                  <dt>Méret</dt>
+                  <dd>221&times;336 mm</dd>
+                  <dt>Hordozó</dt>
+                  <dd>Papír</dd>
+                  <dt>Azonosító</dt>
+                  <dd>C102354_554</dd>
+                  <dt>Az eredeti tárgy földrajzi fekvése</dt>
+                  <dd>Budapest</dd>
+                  <dt>Hozzáférési jogok</dt>
+                  <dd>Magántulajdon</dd>
+                </dl>
+
+              </div>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-container" role="contentinfo">
+      <div class="grid-container">
+        <nav class="footernav">
+          <ul class="footermenu">
+            <li><a href="#">Oldaltérkép</a></li>
+            <li><a href="#">Impresszum</a></li>
+            <li><a href="#">Kapcsolat</a></li>
+          </ul>
+        </nav>
+        <div class="footerlogo">
+          <img src="assets/images/2020.png" alt="Széchenyi 2020" width="63" height="86">
+        </div>
+        <div class="footerdescr">
+          Egységes Nemzeti Oktatási és Kulturális Térinformációs Rendszer
+        </div>
+        <div class="footercopy">
+          2015 &copy;
+        </div>
+      </div>
+      <a href="#" class="tothetop"><i class="icon icon--up"></i></a>
+    </footer>
+
+
+    <script src="scripts/vendors.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+
+  </body>
+</html>

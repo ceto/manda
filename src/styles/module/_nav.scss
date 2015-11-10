@@ -1,0 +1,68 @@
+/*doc
+---
+title: Horizontal navigation
+name: navigation
+category: Module
+---
+
+Responsive hotizontal menu.
+
+```html_example
+<nav class="header-nav nav-horizontal" role="navigation">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/styleguide">Styleguide</a>
+    </li>
+    <li>
+      <a href="https://github.com/wearecube">Github repo</a>
+    </li>
+  </ul>
+</nav>
+```
+*/
+
+.footermenu {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  li {
+    padding:0 0 1.5rem;
+    > a {
+      text-transform: uppercase;
+      color:$color-primary;
+    }
+  }
+}
+
+.pagination {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
+  margin:4rem auto 2rem;
+
+  li {
+    display: inline-block;
+    margin:.125rem;
+    > a {
+      color:$gray;
+      display: inline-block;
+      padding:.125rem;
+      &:hover, &:focus {
+        color:$color-primary;
+      }
+      .icon {
+        font-size: 82%;
+      }
+    }
+    &.current {
+      > a {
+        color:$color-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.searchblock {
+
+  .grid-container {
+
+    @include clearfix();
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    background-image: url('../assets/images/tamop.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 214px auto;
+    min-height: 150px;
+
+  }
+
+  p{
+    //margin-top:0;
+  }
+}
+
+.resultsummary {
+  background-color: $color-secondary;
+  color:white;
+  padding:1.75rem 0;
+  line-height: 1;
+}
+
+.nor {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: rem-calc(16);
+}

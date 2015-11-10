@@ -1,0 +1,262 @@
+/*doc
+---
+title: Forms
+name: forms
+category: Layout
+---
+
+The HTML fieldset element is used to group several controls as well as labels (label) within a web form.
+
+```html_example
+<form action="" method="" class="form-container">
+  <fieldset>
+    <legend>Login</legend>
+    <label for="email">Email</label> <input id="email" name="email" type="email" placeholder="type your email here">
+    <label for="password">Password</label> <input id="password" name="password" type="password" placeholder="type your password here">
+    <input id="check" type="checkbox" name="check"> <label for="check">I'm ok</label>
+  </fieldset>
+</form>
+```
+*/
+
+
+
+// Input / Textarea
+// ----------------------------------------------
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+textarea, select{
+  color: #fff;
+  background-color: $color-primary;
+  padding: rem-calc(8 12);
+  border:1px solid $color-primary;
+  border-radius: 0;
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+  height:3rem;
+  font-weight:400;
+  vertical-align: middle;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+
+
+  &:focus {
+    outline:none;
+    //outline-color: $color-bluedark;
+    background-color: $color-bluedark;
+  }
+}
+
+select {
+  position: relative;
+  background-image: url('../assets/images/triangle-down.svg');
+  background-repeat: no-repeat;
+  background-position: 93% 48%;
+  background-size: auto 33.333%;
+
+  option {
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+    padding: rem-calc(4 8);
+    background-color: #fff;
+    color:$gray;
+    outline:none;
+  }
+}
+
+
+label {
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  color:$color-primary;
+  font-size: .75rem;
+  line-height: 2;
+}
+
+
+::-webkit-input-placeholder {
+   color: $color-fa;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $color-fa;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $color-fa;
+}
+
+:-ms-input-placeholder {
+   color: $color-fa;
+}
+
+
+.header-search-input::-webkit-input-placeholder {
+  color: rgba($gray,.5);
+}
+
+.header-search-input:-moz-placeholder { /* Firefox 18- */
+  color: rgba($gray,.5);
+}
+
+.header-search-input::-moz-placeholder {  /* Firefox 19+ */
+  color: rgba($gray,.5);
+}
+
+.header-search-input:-ms-input-placeholder {
+  color: rgba($gray,.5);
+}
+
+
+
+
+/**** datepicker ***/
+.ui-widget {
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 lighten($gray,20);
+  padding:.5rem;
+}
+/* TYPEAHED */
+// .tt-hint:focus {
+//   background-color: $color-bluedark !important;
+// }
+
+
+.ui-datepicker-next, .ui-datepicker-prev {
+  font-family: 'mandaicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: .5rem;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    margin-top: .5rem;
+    margin-left: .5rem;
+    content:'\e900';
+    display: inline-block;
+  }
+}
+
+.ui-datepicker-next:before {
+  content:'\e901';
+  margin-left: 0;
+  margin-right: .5rem;
+}
+
+.twitter-typeahead {
+  width:100%;
+}
+
+.tt-menu {
+  background-color: #fff;
+  width:100%;
+  box-shadow: 0 2px 5px 0 lighten($gray,30);
+
+}
+
+
+.tt-suggestion {
+  padding:.5rem 1rem;
+  text-transform: none;
+  color:$gray;
+  font-size: 1.125rem;
+  font-weight: 300;
+  &.tt-cursor, &:hover {
+    background-color: $color-f0;
+    //color:$color-bluedark;
+  }
+}
+// Fieldset
+// ----------------------------------------------
+.form-container fieldset {
+
+}
+
+.thegreatsearchform {
+  //text-align: center;
+  max-width: 650px;
+  margin:0 auto;
+}
+
+.formrow {
+  @include clearfix();
+  margin:0 0 1.5rem;
+  label {
+    > * {
+      width:100%;
+    }
+  }
+
+}
+.formrow--2 {
+
+  label {
+    display: block;
+    @include breakpoint($break-large) {
+      width:33.333%;
+      float:left;
+      padding-left: 2%;
+    }
+  }
+}
+
+.dates {
+  @include clearfix();
+  margin-bottom: 1.5rem;
+  @include breakpoint($break-large) {
+    margin-bottom: none;
+    width:66.666%;
+    float:left;
+  }
+  label {
+    width:48%;
+    float:left;
+    &:first-child {
+      margin-right: 2%;
+    }
+    &:last-child {
+      position: relative;
+      margin-left: 2%;
+      &:before {
+        content :"-";
+        font-weight: 600;
+        position: absolute;
+        left:-5%;
+        top:2rem;
+      }
+    }
+    @include breakpoint($break-large) {
+      width:48%;
+      padding-left: 0;
+    }
+  }
+}
+
+.formrow--actions {
+  text-align: center;
+}
+
+.swhat {
+  width:100%;
+}
+
+.sdate {
+
+}
+
+.stype {
+
+}
